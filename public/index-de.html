@@ -8,13 +8,16 @@
         body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0; direction: ltr; }
         header { background-color: #ffffff; padding: 6px 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box; position: sticky; top: 0; z-index: 1000; }
         
-        .logo-box { display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none; }
-        .logo-icon-wrapper { background: linear-gradient(135deg, #cc0000, #ff4d4d); color: white; width: 38px; height: 38px; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(204, 0, 0, 0.2); flex-shrink: 0; }
+        .logo-box { display: flex; align-items: center; gap: 12px; cursor: pointer; text-decoration: none; }
+        .logo-icon-wrapper { background: linear-gradient(135deg, #cc0000, #ff4d4d); color: white; width: 42px; height: 42px; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(204, 0, 0, 0.2); flex-shrink: 0; }
         
-        /* تنظیمات لوگو برای نمایش دو سطری */
+        /* Tanzimat-e logo do satri ba kalamate Herz va Kristall bozorgtar */
         .logo-text-group { display: flex; flex-direction: column; line-height: 1.1; }
-        .logo-line1 { font-size: 13px; font-weight: 700; color: #555; text-transform: lowercase; }
-        .logo-line2 { font-size: 15px; font-weight: 800; color: #cc0000; text-transform: capitalize; letter-spacing: -0.3px; }
+        .logo-line1 { display: flex; align-items: baseline; gap: 4px; font-size: 11px; font-weight: 600; color: #555; text-transform: lowercase; }
+        .logo-line1 .big-word { font-size: 17px; font-weight: 900; color: #cc0000; text-transform: capitalize; }
+        
+        .logo-line2 { display: flex; align-items: baseline; gap: 4px; font-size: 11px; font-weight: 600; color: #555; text-transform: lowercase; }
+        .logo-line2 .big-word { font-size: 17px; font-weight: 900; color: #cc0000; text-transform: capitalize; letter-spacing: -0.3px; }
 
         .search-container { display: flex; align-items: center; flex: 1; max-width: 600px; margin: 0 20px; }
         .search-input { width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 20px 0 0 20px; font-size: 14px; outline: none; font-family: Arial, sans-serif; }
@@ -132,13 +135,20 @@
     <header>
         <a class="logo-box" href="/">
             <div class="logo-icon-wrapper">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
             </div>
+            <!-- Do satri shodan logo ba kalamate Herz va Kristall bozorgtar -->
             <div class="logo-text-group">
-                <span class="logo-line1">Ein Herz</span>
-                <span class="logo-line2">wie Kristall</span>
+                <div class="logo-line1">
+                    <span>ein</span>
+                    <span class="big-word">Herz</span>
+                </div>
+                <div class="logo-line2">
+                    <span>wie</span>
+                    <span class="big-word">Kristall</span>
+                </div>
             </div>
         </a>
         <div class="search-container">
