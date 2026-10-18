@@ -11,9 +11,10 @@
         .logo-box { display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none; }
         .logo-icon-wrapper { background: linear-gradient(135deg, #cc0000, #ff4d4d); color: white; width: 38px; height: 38px; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(204, 0, 0, 0.2); flex-shrink: 0; }
         
-        .logo-text-group { display: flex; flex-direction: column; line-height: 1.05; }
-        .logo-word-small { font-size: 11px; font-weight: 500; color: #555; text-transform: lowercase; }
-        .logo-word-big { font-size: 16px; font-weight: 800; color: #cc0000; text-transform: capitalize; letter-spacing: -0.3px; }
+        /* تنظیمات لوگو برای نمایش دو سطری */
+        .logo-text-group { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo-line1 { font-size: 13px; font-weight: 700; color: #555; text-transform: lowercase; }
+        .logo-line2 { font-size: 15px; font-weight: 800; color: #cc0000; text-transform: capitalize; letter-spacing: -0.3px; }
 
         .search-container { display: flex; align-items: center; flex: 1; max-width: 600px; margin: 0 20px; }
         .search-input { width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 20px 0 0 20px; font-size: 14px; outline: none; font-family: Arial, sans-serif; }
@@ -136,10 +137,8 @@
                 </svg>
             </div>
             <div class="logo-text-group">
-                <span class="logo-word-small">ein</span>
-                <span class="logo-word-big">Herz</span>
-                <span class="logo-word-small">wie</span>
-                <span class="logo-word-big">Kristall</span>
+                <span class="logo-line1">Ein Herz</span>
+                <span class="logo-line2">wie Kristall</span>
             </div>
         </a>
         <div class="search-container">
@@ -1104,4 +1103,3 @@
     </script>
 </body>
 </html>
-
